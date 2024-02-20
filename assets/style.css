@@ -1,32 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: aliceblue;
+body {
+  background-color: aliceblue;
 }
 
 .main {
-    background: red;
-    height: 400px;
+  background: #2261be;
+  height: 400px;
 }
 .container-fluid {
-    background-color: white;
-    padding: 3px 8px;
-    border-radius: 8px;
+  background-color: white;
+  padding: 3px 8px;
+  border-radius: 8px;
 }
 
 nav.navbar.bg-body-tertiary {
-    background-color: #ffffff !important;
-    position: relative;
-    top: 20px;
+  background-color: #ffffff !important;
+  position: relative;
+  top: 20px;
+  border-radius: 8px;
 }
 .fixed {
-    position: fixed !important;
-    top:0; left:0;
-    width: 100%; 
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .navigation.sticky.fixed > nav.navbar.bg-body-tertiary {
-    top: 0;
+  top: 0;
+  border-radius: inherit;
+}
+svg.bi.bi-app-indicator {
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
+
+/* dropdown hover navigation */
+@media all and (min-width: 992px) {
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+  }
 }
